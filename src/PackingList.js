@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Item from "./App";
+import Item from "./Item";
 
 export default function PackingList({
   items,
@@ -35,6 +35,7 @@ export default function PackingList({
           />
         ))}
       </ul>
+
       <div className="actions">
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value="input">Sort by input order</option>

@@ -10,7 +10,6 @@ export default function Form({ onAddItems }) {
     if (!description) return;
 
     const newItem = { description, quantity, packed: false, id: Date.now() };
-    // console.log(newItem);
 
     onAddItems(newItem);
 
@@ -36,7 +35,7 @@ export default function Form({ onAddItems }) {
         placeholder="Item..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-      ></input>
+      />
       <button>Add</button>
     </form>
   );
